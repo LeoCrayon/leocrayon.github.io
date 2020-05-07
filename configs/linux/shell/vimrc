@@ -112,6 +112,8 @@ set magic
 set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
+" Match angle bracket <>
+set matchpairs+=<:>
 
 " No annoying sound on errors
 set noerrorbells
