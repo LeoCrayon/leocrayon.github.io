@@ -4,3 +4,7 @@ PS1='${debian_chroot:+($debian_chroot)}\[\e[0;33m\]\u@\h\[\e[00m\]:[\[\e[01;34m\
 g_color_true=("66,133,244" "234,67,53" "251,188,5" "52,168,83")
 g_color=("69" "160" "220" "71")
 export COLOR_OF_DAY="${g_color[$((RANDOM % ${#g_color[@]}))]}"
+
+btm() {
+  printf "$(tput sc)\e[1;$(($(tput lines) - 1))r\e[$(tput lines);1H\e[38;5;231;48;5;${COLOR_OF_DAY}mshpool:[${1}]\e[K\e[0m$(tput rc)\eD\e[A"
+}
