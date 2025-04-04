@@ -1,2 +1,2 @@
 output_spool_lines = 99999
-prompt_prefix = "\\[\\$(tput sc)\\e[1;\\$((\\$(tput lines) - 1))r\\e[\\$(tput lines);1H\\e[38;5;231;48;5;160m\\]shpool:[$SHPOOL_SESSION_NAME]\\[\\e[K\\e[0m\\$(tput rc)\\eD\\e[A\\]"
+prompt_prefix = "\\[\\$(tput sc)\\e[1;\\$((\\$(tput lines) - 1))r\\e[\\$(tput lines);1H\\e[38;5;231;48;5;\\${COLOR_OF_DAY}m\\]shpool:[$SHPOOL_SESSION_NAME]\\[\\e[K\\e[0m\\$(tput rc)\\eD\\e[A\\]"
