@@ -6,5 +6,5 @@ g_color=("69" "160" "220" "71")
 export COLOR_OF_DAY="${g_color[$((RANDOM % ${#g_color[@]}))]}"
 
 btm() {
-  printf "$(tput sc)\e[1;$(($(tput lines) - 1))r\e[$(tput lines);1H\e[38;5;231;48;5;${COLOR_OF_DAY}mshpool:[${1}]\e[K\e[0m$(tput rc)\eD\e[A"
+  printf "\eD\e[A$(tput sc)\e[1;$(($(tput lines) - 1))r\e[$(tput lines);1H\e[38;5;231;48;5;${COLOR_OF_DAY}m${1}\e[K\e[0m$(tput rc)\eD\e[A"
 }
