@@ -1,0 +1,1 @@
+PROMPT=$'%F{yellow}%n@%m%f:[%F{blue}%B%~%b%f] %F{green}%D{%Y-%m-%dT%H:%M:%S}%f%k\n%# '
